@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+﻿<Application
+    x:Class="Poke_Team.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Poke_Team"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+=======
 ﻿<Application x:Class="Poke_Team.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -5,5 +15,6 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
+>>>>>>> ce309af877bc19877b0684da229fbd0fec93f735
     </Application.Resources>
 </Application>
