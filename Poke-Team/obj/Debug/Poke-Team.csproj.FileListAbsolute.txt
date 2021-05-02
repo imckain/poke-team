@@ -22,3 +22,6 @@ C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\obj\Debug\Poke-Team_Co
 C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\bin\Debug\Fonts\PressStart2P.ttf
 C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\imcka\Desktop\code\poke-team\Poke-Team\Poke-Team\obj\Debug\Poke-Team.csproj.App.config
