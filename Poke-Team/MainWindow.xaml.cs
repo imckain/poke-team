@@ -32,6 +32,8 @@ namespace Poke_Team
             timer.Tick += Timer_Tick;
 
             panelWidth = SidePanel.Width;
+
+            timer.Start();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -39,7 +41,7 @@ namespace Poke_Team
             if (hidden)
             {
                 SidePanel.Width += 1;
-                if (SidePanel.Width >= panelWidth)
+                if (SidePanel.Width >= 160)
                 {
                     timer.Stop();
                     hidden = false;
@@ -48,7 +50,7 @@ namespace Poke_Team
             else
             {
                 SidePanel.Width -= 1;
-                if (SidePanel.Width <= 55)
+                if (SidePanel.Width <= panelWidth)
                 {
                     timer.Stop();
                     hidden = true;
@@ -72,6 +74,11 @@ namespace Poke_Team
         private void Menu_Button_Click(object sender, RoutedEventArgs e)
         {
             timer.Start();
+        }
+
+        private void MinimizeButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
         }
     }
 }
