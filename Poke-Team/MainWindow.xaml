@@ -57,11 +57,11 @@
             Panel.ZIndex="100"
             Background="#EF5350">
             <StackPanel>
-                <Grid Height="50">
+                <Grid Height="50" HorizontalAlignment="Left">
                     <Button
-                        Width="50"
+                        Width="55"
                         Height="40"
-                        HorizontalAlignment="Left"
+                        HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Background="Transparent"
                         BorderBrush="Transparent"
@@ -158,67 +158,167 @@
         <Grid Margin="55,50,0,0">
             <WrapPanel
                 Margin="50"
-                HorizontalAlignment="Stretch"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Orientation="Horizontal">
-                <StackPanel
-                    Width="180"
-                    Height="120"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-                    <Label HorizontalAlignment="Center">Position 1</Label>
-                    <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                        <Image
-                            Width="40"
-                            Margin="20"
-                            HorizontalAlignment="Left"
-                            Source="Images/clipart1916649.png" />
-                        <Canvas
-                            Width="2"
-                            Height="60"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Background="DimGray" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30">
+                    <StackPanel
+                        Width="200"
+                        Height="140"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <Label FontSize="14" FontFamily="/Poke-Team;component/Fonts/#Quicksand" HorizontalAlignment="Center">Position 1</Label>
+                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <StackPanel Margin="10 5" >
+                                <Image
+                                    Width="40"
+                                    Margin="20"
+                                    HorizontalAlignment="Left"
+                                    Source="Images/clipart1916649.png" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox FontFamily="/Poke-Team;component/Fonts/#Quicksand" Margin="5 0" Width="75" />
+                                    <Button Content="" FontFamily="Segoe MDL2 Assets" Background="Transparent" BorderBrush="Transparent" FontSize="12"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <Canvas
+                                Width="2"
+                                Height="80"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="DimGray" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel
+                        Width="200"
+                        Height="140"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <Label FontSize="14" FontFamily="/Poke-Team;component/Fonts/#Quicksand" HorizontalAlignment="Center">Position 2</Label>
+                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <StackPanel Margin="10 5">
+                                <Image
+                                    Width="40"
+                                    Margin="20"
+                                    HorizontalAlignment="Left"
+                                    Source="Images/clipart1916649.png" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox FontFamily="/Poke-Team;component/Fonts/#Quicksand" Margin="5 0" Width="75" />
+                                    <Button Content="" FontFamily="Segoe MDL2 Assets" Background="Transparent" BorderBrush="Transparent" FontSize="12"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <Canvas
+                                Width="2"
+                                Height="80"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="DimGray" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel
+                        Width="200"
+                        Height="140"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <Label FontSize="14" FontFamily="/Poke-Team;component/Fonts/#Quicksand" HorizontalAlignment="Center">Position 3</Label>
+                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <StackPanel Margin="10 5">
+                                <Image
+                                    Width="40"
+                                    Margin="20"
+                                    HorizontalAlignment="Left"
+                                    Source="Images/clipart1916649.png" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox FontFamily="/Poke-Team;component/Fonts/#Quicksand" Margin="5 0" Width="75" />
+                                    <Button Content="" FontFamily="Segoe MDL2 Assets" Background="Transparent" BorderBrush="Transparent" FontSize="12"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <Canvas
+                                Width="2"
+                                Height="80"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="DimGray" />
+                        </StackPanel>
                     </StackPanel>
                 </StackPanel>
-                <StackPanel
-                    Width="180"
-                    Height="120"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-                    <Label HorizontalAlignment="Center">Position 2</Label>
-                    <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                        <Image
-                            Width="40"
-                            Margin="20"
-                            HorizontalAlignment="Left"
-                            Source="Images/clipart1916649.png" />
-                        <Canvas
-                            Width="2"
-                            Height="60"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Background="DimGray" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30">
+                    <StackPanel
+                        Width="200"
+                        Height="140"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <Label FontSize="14" FontFamily="/Poke-Team;component/Fonts/#Quicksand" HorizontalAlignment="Center">Position 4</Label>
+                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <StackPanel Margin="10 5">
+                                <Image
+                                    Width="40"
+                                    Margin="20"
+                                    HorizontalAlignment="Left"
+                                    Source="Images/clipart1916649.png" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox FontFamily="/Poke-Team;component/Fonts/#Quicksand" Margin="5 0" Width="75" />
+                                    <Button Content="" FontFamily="Segoe MDL2 Assets" Background="Transparent" BorderBrush="Transparent" FontSize="12"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <Canvas
+                                Width="2"
+                                Height="80"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="DimGray" />
+                        </StackPanel>
                     </StackPanel>
-                </StackPanel>
-                <StackPanel
-                    Width="180"
-                    Height="120"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-                    <Label HorizontalAlignment="Center">Position 2</Label>
-                    <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                        <Image
-                            Width="40"
-                            Margin="20"
-                            HorizontalAlignment="Left"
-                            Source="Images/clipart1916649.png" />
-                        <Canvas
-                            Width="2"
-                            Height="60"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Background="DimGray" />
+                    <StackPanel
+                        Width="200"
+                        Height="140"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <Label  FontSize="14" FontFamily="/Poke-Team;component/Fonts/#Quicksand" HorizontalAlignment="Center">Position 5</Label>
+                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <StackPanel Margin="10 5">
+                                <Image
+                                    Width="40"
+                                    Margin="20"
+                                    HorizontalAlignment="Left"
+                                    Source="Images/clipart1916649.png" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox FontFamily="/Poke-Team;component/Fonts/#Quicksand" Margin="5 0" Width="75" />
+                                    <Button Content="" FontFamily="Segoe MDL2 Assets" Background="Transparent" BorderBrush="Transparent" FontSize="12"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <Canvas
+                                Width="2"
+                                Height="80"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="DimGray" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel
+                        Width="200"
+                        Height="140"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                        <Label FontSize="14" FontFamily="/Poke-Team;component/Fonts/#Quicksand" HorizontalAlignment="Center">Position 6</Label>
+                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <StackPanel Margin="10 5">
+                                <Image
+                                    Width="40"
+                                    Margin="20"
+                                    HorizontalAlignment="Left"
+                                    Source="Images/clipart1916649.png" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox FontFamily="/Poke-Team;component/Fonts/#Quicksand" Margin="5 0" Width="75" />
+                                    <Button Content="" FontFamily="Segoe MDL2 Assets" Background="Transparent" BorderBrush="Transparent" FontSize="12"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <Canvas
+                                Width="2"
+                                Height="80"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Background="DimGray" />
+                        </StackPanel>
                     </StackPanel>
                 </StackPanel>
             </WrapPanel>
