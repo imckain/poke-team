@@ -112,8 +112,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Class1.cs" />
-    <Compile Include="OpenAPIs\.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -134,12 +132,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Fonts\Quicksand-VariableFont_wght.ttf" />
-    <None Include="OpenAPIs\.json">
-      <Namespace>Pokemon</Namespace>
-      <ClassName>Pokemon</ClassName>
-      <CodeGenerator>NSwagCSharp</CodeGenerator>
-      <SourceUri>https://pokeapi.co/api/v2/pokemon/</SourceUri>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
