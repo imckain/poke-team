@@ -13,12 +13,38 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Net.Http;
 
 namespace Poke_Team
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
+    /*public class HttpClient : System.Net.Http.HttpMessageInvoker
+    {
+        static readonly HttpClient client = new HttpClient();
+
+        static async Task Main()
+        {
+            var uri = "https://pokeapi.co/api/v2/pokemon/";
+
+            try
+            {
+                string responseBody = await client.GetStringAsync(uri);
+
+                Console.WriteLine(responseBody);
+            }
+            catch (HttpRequestException e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+    }*/
+
+
+
     public partial class MainWindow : Window
     {
         DispatcherTimer timer;
