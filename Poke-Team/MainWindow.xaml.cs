@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokeTeamLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,72 +14,46 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Net.Http;
 
 namespace Poke_Team
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
-        DispatcherTimer timer;
+        /*private int maxId = 0;
+        private int currentId = 0;*/
 
-        double panelWidth;
-        bool hidden;
         public MainWindow()
         {
             InitializeComponent();
-            timer = new DispatcherTimer { Interval = new TimeSpan(0, 0, 0, 0, 0) };
-            timer.Tick += Timer_Tick;
 
-            panelWidth = SidePanel.Width;
-
-            timer.Start();
+            /*ApiHelper.InitializeClient();*/
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        /*private async Task LoadSprite(int spriteId = 0)
         {
-            if (hidden)
+            var pokemon = await PokemonProcessor.LoadPokemon(spriteId);
+
+            if (spriteId == 0)
             {
-                SidePanel.Width += 1;
-                if (SidePanel.Width >= 160)
-                {
-                    timer.Stop();
-                    hidden = false;
-                }
+                maxId = pokemon.Id;
             }
-            else
-            {
-                SidePanel.Width -= 1;
-                if (SidePanel.Width <= panelWidth)
-                {
-                    timer.Stop();
-                    hidden = true;
-                }
-            }
+
+            currentId = pokemon.Id;
+
+            var uriSource = new Uri(pokemon.Sprites, UriKind.Absolute);
+
+            pokemonSprite.Source = new BitmapImage(uriSource);
         }
 
-        private void Close_Button(object sender, RoutedEventArgs e)
+        private async void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void PanelHeader_OnMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.LeftButton == MouseButtonState.Pressed)
-            {
-                DragMove();
-            }
-        }
-
-        private void Menu_Button_Click(object sender, RoutedEventArgs e)
-        {
-            timer.Start();
-        }
-
-        private void MinimizeButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
-        }
+            await LoadSprite();
+        }*/
     }
 }
+
