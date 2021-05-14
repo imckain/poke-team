@@ -6,42 +6,45 @@
     xmlns:local="clr-namespace:Poke_Team"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModel="clr-namespace:Poke_Team.MVM.ViewModel"
-    Title="Poke-Team"
-    Width="920"
-    Height="600"
-    ResizeMode="NoResize"
-    WindowStartupLocation="CenterScreen"
-    WindowStyle="None"
-    mc:Ignorable="d"
-    Background="Transparent"
-    AllowsTransparency="True"
-    >
-
+    Title="Poke-Team" Width="920" MinHeight="600"
+    mc:Ignorable="d" Background="Transparent">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="3" CaptionHeight="0" UseAeroCaptionButtons="False" ResizeBorderThickness="4"/>
+    </WindowChrome.WindowChrome>
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
 
-    <Border Background="#272537"
-            CornerRadius="10">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="75"></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <TextBlock Text="Poke-Team"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Left"
-                       Foreground="White"
-                       FontSize="20" FontFamily="/Poke-Team;component/Fonts/#Press Start 2P"
-                       Margin="10, 0, 0, 0"/>
-
-            <StackPanel Grid.Row="1">
+    <Border Background="#272537" CornerRadius="0">
+        <DockPanel>
+            <Border CornerRadius="5,5,0,0" DockPanel.Dock="Top" Background="#22000000">
+                <DockPanel DockPanel.Dock="Top" Height="32">
+                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                        <Button x:Name="chromeMinBtn" Background="Transparent" BorderThickness="0" Width="46" Height="32" FontFamily="Segoe MDL2 Assets" Content="&#xE921;" Foreground="White" Click="chromeMinBtn_Click"/>
+                        <Button x:Name="chromeMaxRestBtn" Background="Transparent" BorderThickness="0" Visibility="Visible" Width="46" Height="32" FontFamily="Segoe MDL2 Assets"  Foreground="White" Content="&#xE922;"/>
+                        <Button x:Name="chromeCloseBtn" Background="Transparent" BorderThickness="0" Width="46" Height="32" FontFamily="Segoe MDL2 Assets"  Foreground="White" Content="&#xE8BB;" VerticalAlignment="Top" Click="chromeCloseBtn_Click"/>
+                    </StackPanel>
+                    <ContentControl x:Name="topMenuBar" MouseDoubleClick="topMenuBar_MouseDoubleClick" MouseDown="topMenuBar_MouseDown">
+                        <Border Background="#00000000">
+                            <TextBlock Text="Poke-Team" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontSize="16" FontFamily="/Poke-Team;component/Fonts/#Press Start 2P" Margin="10, 0, 0, 0"/>
+                        </Border>
+                    </ContentControl>
+                </DockPanel>
+            </Border>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
                 
-                <RadioButton Content="Home"
+                <StackPanel Grid.Row="1">
+
+                    <RadioButton Content="Home"
                              Height="50"
                              Foreground="White"
                              FontSize="16" 
@@ -49,35 +52,33 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Teams"
+                    <RadioButton Content="Teams"
                              Height="50"
                              Foreground="White"
                              FontSize="16" 
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding TeamViewCommand}"/>
 
-                <RadioButton Content="Team Builder"
+                    <RadioButton Content="Team Builder"
                              Height="50"
                              Foreground="White"
                              FontSize="16" 
                              Style="{StaticResource MenuButtonTheme}"/>
 
 
-            </StackPanel>
+                </StackPanel>
 
-            <TextBox Grid.Column="1"
+                <TextBox Grid.Column="0"
                        Width="250"
                        Height="40"
                        VerticalContentAlignment="Center"
                        HorizontalAlignment="Left"
-                       Margin="5"
                        Style="{StaticResource TextBoxTheme}"/>
 
-            <ContentControl Grid.Row="1"
+                <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10"
                             Content="{Binding CurrentView}"/>
-        </Grid>
-
+            </Grid>
+        </DockPanel>
     </Border> 
 </Window>
