@@ -1,0 +1,5 @@
+/bin/Debug/*
+*.sln
+*.cache
+.vs/Poke-Team/v16/.suo
+packages/*
